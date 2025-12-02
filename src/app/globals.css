@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================================
+   CSS Variables & Root Styles
+   ================================ */
+:root {
+  --sunset-500: #FF6B35;
+  --ocean-400: #06D6A0;
+  --nature-500: #118AB2;
+  --sand-50: #F7F7F2;
+  --dark-800: #2C3E50;
+  
+  --gradient-primary: linear-gradient(135deg, var(--sunset-500) 0%, var(--ocean-400) 100%);
+  --gradient-warm: linear-gradient(135deg, #FF6B35 0%, #FF8C5A 50%, #FFB088 100%);
+  --gradient-cool: linear-gradient(135deg, #06D6A0 0%, #118AB2 100%);
+}
+
+/* ================================
+   Base Styles
+   ================================ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-sand-50 text-dark-800 font-body;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold tracking-tight;
+  }
+
+  /* Focus states for accessibility */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-sunset-500;
+  }
+
+  /* Selection styling */
+  ::selection {
+    @apply bg-sunset-500/20 text-dark-800;
+  }
+}
+
+/* ================================
+   Component Utilities
+   ================================ */
+@layer components {
+  /* Gradient text utility */
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  /* Primary button style */
+  .btn-primary {
+    @apply relative px-8 py-4 bg-sunset-500 text-white font-heading font-semibold 
+           rounded-full shadow-lg hover:shadow-xl transition-all duration-300
+           hover:scale-105 active:scale-95 overflow-hidden;
+  }
+
+  .btn-primary::before {
+    content: '';
+    @apply absolute inset-0 bg-shimmer-gradient opacity-0 
+           hover:opacity-100 transition-opacity duration-300;
+    background-size: 200% 100%;
+    animation: shimmer 2s linear infinite;
+  }
+
+  /* Secondary button style */
+  .btn-secondary {
+    @apply px-8 py-4 border-2 border-sunset-500 text-sunset-500 font-heading 
+           font-semibold rounded-full hover:bg-sunset-500 hover:text-white 
+           transition-all duration-300 hover:scale-105 active:scale-95;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-white rounded-2xl shadow-lg p-6 transition-all duration-300
+           hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .card-glass {
+    @apply bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg p-6 
+           border border-white/20;
+  }
+
+  /* Section container */
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Section padding */
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  /* Gradient border card */
+  .gradient-border {
+    @apply relative rounded-2xl;
+  }
+
+  .gradient-border::before {
+    content: '';
+    @apply absolute -inset-[2px] rounded-2xl -z-10;
+    background: var(--gradient-primary);
+  }
+
+  /* Badge styles */
+  .badge {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm 
+           font-medium bg-white/90 shadow-md backdrop-blur-sm;
+  }
+
+  .badge-pulse {
+    @apply badge animate-pulse-slow;
+  }
+}
+
+/* ================================
+   Animation Utilities
+   ================================ */
+@layer utilities {
+  /* Stagger animation delays */
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+
+  /* Text gradient utilities */
+  .text-gradient-sunset {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #FF6B35 0%, #FF8C5A 100%);
+  }
+
+  .text-gradient-ocean {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #06D6A0 0%, #118AB2 100%);
+  }
+
+  /* Background patterns */
+  .bg-pattern-dots {
+    background-image: radial-gradient(circle, rgba(255,107,53,0.1) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .bg-pattern-waves {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23FF6B35' fill-opacity='0.05' d='M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+  }
+
+  /* Scroll reveal base */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.8s ease-out;
+  }
+}
+
+/* ================================
+   Custom Scrollbar
+   ================================ */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-sand-50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-sunset-500/30 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-sunset-500/50;
+}
+
+/* ================================
+   Form Input Styles
+   ================================ */
+input, textarea, select {
+  @apply w-full px-4 py-3 rounded-xl border-2 border-sand-200 bg-white
+         transition-all duration-300 font-body
+         focus:border-sunset-500 focus:ring-4 focus:ring-sunset-500/10
+         placeholder:text-sand-400;
+}
+
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+  @apply border-red-400;
+}
+
+/* ================================
+   Responsive Typography
+   ================================ */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+

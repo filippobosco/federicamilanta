@@ -1,0 +1,16 @@
+export { default as Hero } from './Hero'
+export { default as Intro } from './Intro'
+export { default as Target } from './Target'
+export { default as MiciosHouse } from './MiciosHouse'
+export { default as Features } from './Features'
+export { default as Program } from './Program'
+export { default as Gallery } from './Gallery'
+export { default as About } from './About'
+export { default as Testimonials } from './Testimonials'
+export { default as Info } from './Info'
+export { default as FAQ } from './FAQ'
+export { default as Urgency } from './Urgency'
+export { default as ContactForm } from './ContactForm'
+export { default as Footer } from './Footer'
+
+
