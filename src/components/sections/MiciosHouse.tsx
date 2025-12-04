@@ -62,7 +62,7 @@ export default function MiciosHouse() {
             className="relative aspect-[4/3] rounded-2xl overflow-hidden"
           >
             <Image
-              src="/oceanie - campagne (1).png"
+              src="/villa.png"
               alt="Villa MICIO'S HOUSE - Piscina"
               fill
               className="object-cover"
