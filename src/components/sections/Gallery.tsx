@@ -8,8 +8,8 @@ import { Section, SectionTitle } from '@/components/ui'
 
 const galleryImages = [
   {
-    src: 'https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=800',
-    alt: 'Villa con piscina infinity e palme',
+    src: '/villa.png',
+    alt: 'Villa con piscina e giardino tropicale',
     title: 'Villa con Piscina',
     span: 'col-span-2 row-span-2',
   },

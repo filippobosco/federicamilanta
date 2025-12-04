@@ -19,7 +19,7 @@ export default function About() {
         >
           <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
             <Image
-              src="/milanta-26.jpg"
+              src="/federica.jpg"
               alt="Federica Milanta - Personal Trainer"
               fill
               className="object-cover"
