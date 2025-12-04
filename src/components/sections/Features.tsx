@@ -17,7 +17,7 @@ const featureCategories = [
     number: '02',
     category: 'Fitness & Benessere',
     items: [
-      'Allenamenti funzionali quotidiani',
+      <>Allenamenti funzionali quotidiani<br />con 2 Personal Trainer in palestra</>,
       'Sessioni guidate all\'aperto',
       'Workshop su alimentazione e mindset',
     ],
@@ -28,15 +28,15 @@ const featureCategories = [
     items: [
       'Safari all inclusive nella savana',
       'Kayak e snorkeling nell\'oceano',
-      'Escursioni tra mangrovie e foreste',
+      "Escursioni a: Marafa - Hell's Kitchen, Che Shale (la spiaggia dorata), Giornata in barca Dhow (tipica barca locale), Rovine di Gede e tanto altro ancora...",
     ],
   },
   {
     number: '04',
     category: 'Relax & Gusto',
     items: [
-      'Aperitivi al tramonto vista oceano',
-      'Cene gourmet con sapori locali',
+      'Tutte le colazioni preparate dallo Chef',
+      '3 cene in villa preparate dallo Chef',
       'Tempo libero per te stesso',
     ],
   },

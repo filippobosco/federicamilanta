@@ -64,10 +64,11 @@ export default function About() {
             </p>
 
             <p>
-              Ma non mi basta la palestra. Ho sempre amato viaggiare, esplorare posti nuovi 
-              e vivere esperienze che ti restano dentro. Per questo ho deciso di unire le 
-              mie due grandi passioni:{' '}
-              <strong className="text-sunset-500">fitness e avventura</strong>.
+              Ma non mi basta la palestra. Ho viaggiato tanto per il mondo, amo esplorare 
+              posti nuovi...<br />
+              Per questo ho deciso di unire le mie 2 grandi passioni:{' '}
+              <strong className="text-sunset-500">SPORT & FITNESS</strong> e{' '}
+              <strong className="text-sunset-500">L&apos;AVVENTURA</strong>.
             </p>
 
             <p>

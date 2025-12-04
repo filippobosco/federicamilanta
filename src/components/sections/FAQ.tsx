@@ -14,7 +14,7 @@ const faqs = [
     answer: "Ogni mattina faremo allenamenti funzionali di circa 60-90 minuti. Lavoro a corpo libero, circuiti, esercizi cardiovascolari e tonificazione. Tutto all'aperto, con vista oceano o in spiaggia. Ci divertiremo sudando!",
   },
   {
-    question: 'Cosa include esattamente il prezzo di 1.500€?',
+    question: 'Cosa include esattamente il prezzo di 1.499€?',
     answer: 'Il prezzo include: alloggio in villa con piscina per 8 notti, tutti gli allenamenti, safari completo, escursioni, kayak, snorkeling, cene gourmet, aperitivi, trasferimenti locali e organizzazione completa. Praticamente tutto, tranne voli internazionali, visto e alcuni pranzi.',
   },
   {

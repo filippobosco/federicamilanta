@@ -133,6 +133,7 @@ const programDays = [
       'Check-out da MICIO\'S HOUSE',
       'Trasferimento all\'aeroporto di Mombasa',
       'Partenza per Milano con il cuore pieno',
+      '✨ Opzione: partenza l\'8 Marzo aggiungendo una notte extra',
     ],
   },
 ]

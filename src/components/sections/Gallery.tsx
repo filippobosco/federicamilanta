@@ -14,9 +14,9 @@ const galleryImages = [
     span: 'col-span-2 row-span-2',
   },
   {
-    src: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=600',
-    alt: 'Allenamento outdoor sulla spiaggia al tramonto',
-    title: 'Allenamento Outdoor',
+    src: '/palestra.jpg',
+    alt: 'Palestra locale con attrezzature TRX e functional training',
+    title: 'Palestra Locale',
     span: 'col-span-1 row-span-1',
   },
   {
@@ -26,15 +26,15 @@ const galleryImages = [
     span: 'col-span-1 row-span-1',
   },
   {
-    src: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800',
-    alt: 'Spiaggia di Watamu con acqua cristallina',
+    src: '/mare.JPG',
+    alt: 'Spiaggia di Watamu con acqua cristallina e sabbia bianca',
     title: 'Spiaggia Watamu',
     span: 'col-span-1 row-span-2',
   },
   {
-    src: 'https://images.unsplash.com/photo-1476673160081-cf065607f449?q=80&w=600',
-    alt: 'Tramonto spettacolare sull\'oceano Indiano',
-    title: 'Tramonto',
+    src: '/sdraio.jpg',
+    alt: 'Relax in spiaggia con lettini e palme',
+    title: 'Relax in Spiaggia',
     span: 'col-span-1 row-span-1',
   },
   {
@@ -44,9 +44,9 @@ const galleryImages = [
     span: 'col-span-1 row-span-1',
   },
   {
-    src: 'https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?q=80&w=600',
-    alt: 'Snorkeling con pesci colorati',
-    title: 'Snorkeling',
+    src: '/panorama.png',
+    alt: 'Marafa Hell\'s Kitchen - canyon rosso spettacolare',
+    title: 'Marafa Canyon',
     span: 'col-span-1 row-span-1',
   },
   {
@@ -87,14 +87,6 @@ export default function Gallery() {
               className="object-cover transition-transform duration-500 group-hover:scale-110"
               sizes="(max-width: 768px) 50vw, 25vw"
             />
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-dark-800/80 via-transparent to-transparent 
-                           opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            {/* Caption */}
-            <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 
-                           transition-transform duration-300">
-              <h3 className="text-white font-bold text-lg">{image.title}</h3>
-            </div>
           </motion.div>
         ))}
       </div>

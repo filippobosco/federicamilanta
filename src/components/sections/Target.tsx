@@ -22,7 +22,7 @@ const targetAudience = [
   {
     title: 'Ami Viaggiare',
     subtitle: 'in Compagnia',
-    description: "Partire con un piccolo gruppo ti fa sentire sicuro e ti permette di conoscere persone che condividono le tue passioni. Max 12 persone.",
+    description: "Partire con un piccolo gruppo ti fa sentire sicuro e ti permette di conoscere persone che condividono le tue passioni. Max 12 persone per garantire un'esperienza unica, intima e personalizzata.",
   },
 ]
 

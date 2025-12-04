@@ -91,7 +91,7 @@ export default function ThankYouPage() {
             <p className="text-2xl font-bold text-white">
               26 Febbraio — 7 Marzo <span className="text-sunset-500">2026</span>
             </p>
-            <p className="text-white/60 mt-1">Watamu, Kenya • 8 notti • 1.500€</p>
+            <p className="text-white/60 mt-1">Watamu, Kenya • 8 notti • 1.499€</p>
           </motion.div>
 
           {/* Contatti diretti */}

@@ -12,7 +12,8 @@ const included = [
   'Kayak, snorkeling e sport acquatici',
   'Escursione Marafa Canyon e Rovine di Gede',
   'Aperitivi al tramonto',
-  'Tutti i trasferimenti locali',
+  'Transfer a/r da e per aeroporto in minivan privato',
+  'Tante altre escursioni...',
 ]
 
 const notIncluded = [
@@ -52,6 +53,7 @@ export default function Info() {
             <span className="text-sand-400 text-sm uppercase tracking-wider">Quando</span>
             <p className="text-xl md:text-2xl font-bold text-dark-800 mt-2">26 Feb — 7 Mar</p>
             <p className="text-sand-500 text-sm mt-1">2026</p>
+            <p className="text-sunset-500 text-xs mt-2">Possibilità di partire l&apos;8 Mar (+1 notte)</p>
           </motion.div>
 
           <motion.div
@@ -86,7 +88,7 @@ export default function Info() {
             className="bg-white p-6 md:p-8"
           >
             <span className="text-sand-400 text-sm uppercase tracking-wider">Prezzo</span>
-            <p className="text-xl md:text-2xl font-bold text-sunset-500 mt-2">1.500 €</p>
+            <p className="text-xl md:text-2xl font-bold text-sunset-500 mt-2">1.499 €</p>
             <p className="text-sand-500 text-sm mt-1">a persona</p>
           </motion.div>
         </div>
