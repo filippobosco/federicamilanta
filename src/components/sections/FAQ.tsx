@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     question: 'Serve il visto per il Kenya?',
-    answer: 'Sì, è necessario il visto turistico che puoi richiedere online (eVisa) prima della partenza. Costa circa 50$ e si ottiene in pochi giorni. Ti fornirò tutte le istruzioni.',
+    answer: 'Sì, è necessario il visto turistico che puoi richiedere online (eVisa) prima della partenza. Costa circa 30€ e si ottiene in pochi giorni. Ti fornirò tutte le istruzioni.',
   },
   {
     question: 'Posso partecipare da solo/a?',

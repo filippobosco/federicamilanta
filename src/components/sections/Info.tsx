@@ -157,7 +157,7 @@ export default function Info() {
             <div className="mt-10 p-6 bg-dark-800 rounded-lg">
               <p className="text-white/60 text-sm uppercase tracking-wider mb-1">Scadenza Saldo</p>
               <p className="text-2xl font-bold text-white">12 Gennaio 2026</p>
-              <p className="text-sunset-500 text-sm mt-2 font-medium">Caparra 360€ entro 25 Agosto 2025</p>
+              <p className="text-sunset-500 text-sm mt-2 font-medium">Caparra 500€ entro 25 Agosto 2025</p>
             </div>
           </motion.div>
         </div>
