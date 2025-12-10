@@ -51,11 +51,33 @@ export default function ContactForm() {
 
     setIsSubmitting(true)
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+    try {
+      // Invia dati a Google Sheets
+      const response = await fetch(
+        'https://script.google.com/macros/s/AKfycbwHkpfmHDJDSd5EKCkMFrgjoXuEvj8bzOMIDtOsQDS0Pyf_PWEbo_urUyru7Z3MDsDgNA/exec',
+        {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            nome: formData.nome,
+            cognome: formData.cognome,
+            email: formData.email,
+            telefono: formData.telefono,
+            messaggio: formData.messaggio,
+          }),
+        }
+      )
+      
+      setIsSubmitted(true)
+    } catch (error) {
+      console.error('Errore invio form:', error)
+      alert('Si è verificato un errore. Riprova o contattami su Instagram.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
