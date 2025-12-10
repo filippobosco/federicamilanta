@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, FormEvent } from 'react'
+import { useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { CheckCircleIcon, ShieldCheckIcon, ClockIcon } from '@heroicons/react/24/outline'
 import { Section, SectionTitle, Button } from '@/components/ui'
@@ -15,6 +16,7 @@ interface FormData {
 }
 
 export default function ContactForm() {
+  const router = useRouter()
   const [formData, setFormData] = useState<FormData>({
     nome: '',
     cognome: '',
@@ -53,7 +55,7 @@ export default function ContactForm() {
 
     try {
       // Invia dati a Google Sheets
-      const response = await fetch(
+      await fetch(
         'https://script.google.com/macros/s/AKfycbwHkpfmHDJDSd5EKCkMFrgjoXuEvj8bzOMIDtOsQDS0Pyf_PWEbo_urUyru7Z3MDsDgNA/exec',
         {
           method: 'POST',
@@ -71,11 +73,11 @@ export default function ContactForm() {
         }
       )
       
-      setIsSubmitted(true)
+      // Redirect alla thank you page
+      router.push('/thank-you')
     } catch (error) {
       console.error('Errore invio form:', error)
       alert('Si è verificato un errore. Riprova o contattami su Instagram.')
-    } finally {
       setIsSubmitting(false)
     }
   }
