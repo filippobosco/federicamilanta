@@ -8,16 +8,18 @@ const featureCategories = [
     number: '01',
     category: 'Alloggio & Comfort',
     items: [
-      'Villa privata con piscina infinity',
+      '10 notti in villa privata con piscina infinity',
       'Camere confortevoli immerse nella natura',
       'Spazi comuni per socializzare',
+      'Transfer A/R aeroporto',
     ],
   },
   {
     number: '02',
     category: 'Fitness & Benessere',
     items: [
-      <>Allenamenti funzionali quotidiani<br />con 2 Personal Trainer in palestra</>,
+      '5 allenamenti con VIC e Federica',
+      '4 allenamenti con Federica',
       'Sessioni guidate all\'aperto',
       'Workshop su alimentazione e mindset',
     ],
@@ -26,9 +28,14 @@ const featureCategories = [
     number: '03',
     category: 'Avventura & Natura',
     items: [
-      'Safari all inclusive nella savana',
-      'Kayak e snorkeling nell\'oceano',
-      "Escursioni a: Marafa - Hell's Kitchen, Che Shale (la spiaggia dorata), Giornata in barca Dhow (tipica barca locale), Rovine di Gede e tanto altro ancora...",
+      '2 giorni safari (1 notte) in lodge e tende, camere da 2 o 3 per camera',
+      'MARAFA, CHE SHALE, MALINDI',
+      'FULL DAY BOAT in DHOW tipica barca locale, con canoa 1 ora',
+      'ROVINE DI GEDE in tuk tuk',
+      'DOMENICA: MARAFIKI, MESSA GOSPEL, GRIGLIATA + LETTINO',
+      'APERITIVO CRAB SHARK, LITCHOUSE',
+      'COOKING CLASS NEL VILLAGGIO',
+      'VICTORIA ACADEMY',
     ],
   },
   {
@@ -36,7 +43,7 @@ const featureCategories = [
     category: 'Relax & Gusto',
     items: [
       'Tutte le colazioni preparate dallo Chef',
-      '3 cene in villa preparate dallo Chef',
+      '5 cene in villa preparate dallo Chef',
       'Tempo libero per te stesso',
     ],
   },
@@ -60,7 +67,7 @@ export default function Features() {
           Un&apos;Esperienza <span className="text-sunset-500">Completa</span>
         </h2>
         <p className="text-sand-500 max-w-xl mx-auto text-lg mt-4">
-          8 giorni pensati per farti vivere ogni sfumatura del Kenya.
+          11 giorni pensati per farti vivere ogni sfumatura del Kenya.
         </p>
       </motion.div>
 

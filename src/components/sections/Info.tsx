@@ -4,20 +4,24 @@ import { motion } from 'framer-motion'
 import { Section, Button } from '@/components/ui'
 
 const included = [
-  '8 notti (7 in villa + 1 al Lodge Safari)',
-  'Colazioni e 3 cene gourmet in villa',
-  'Allenamenti quotidiani con Federica e Victor',
-  'Safari completo allo Tsavo Est',
-  'Giornata in dhow con pranzo incluso',
-  'Kayak, snorkeling e sport acquatici',
-  'Escursione Marafa Canyon e Rovine di Gede',
-  'Aperitivi al tramonto',
-  'Transfer a/r da e per aeroporto in minivan privato',
-  'Tante altre escursioni...',
+  '10 notti in villa',
+  'Transfer A/R aeroporto',
+  '2 giorni safari (1 notte) in lodge e tende, camere da 2 o 3 per camera',
+  '5 cene in villa preparate dallo Chef',
+  'Colazioni preparate dallo Chef',
+  '5 allenamenti con VIC e Federica',
+  '4 allenamenti con Federica',
+  'MARAFA, CHE SHALE, MALINDI',
+  'FULL DAY BOAT in DHOW tipica barca locale, con canoa 1 ora',
+  'ROVINE DI GEDE in tuk tuk',
+  'DOMENICA: MARAFIKI, MESSA GOSPEL, GRIGLIATA + LETTINO',
+  'APERITIVO CRAB SHARK, LITCHOUSE',
+  'COOKING CLASS NEL VILLAGGIO',
+  'VICTORIA ACADEMY',
+  'Volo Italia-Kenya A/R incluso',
 ]
 
 const notIncluded = [
-  'Volo Italia-Kenya A/R (600-750€)',
   'ETA/Visto Kenya (30€)',
   'Alcuni pranzi',
   'Spese personali',
@@ -51,9 +55,8 @@ export default function Info() {
             className="bg-white p-6 md:p-8"
           >
             <span className="text-sand-400 text-sm uppercase tracking-wider">Quando</span>
-            <p className="text-xl md:text-2xl font-bold text-dark-800 mt-2">26 Feb — 7 Mar</p>
+            <p className="text-xl md:text-2xl font-bold text-dark-800 mt-2">8-19 AGOSTO</p>
             <p className="text-sand-500 text-sm mt-1">2026</p>
-            <p className="text-sunset-500 text-xs mt-2">Possibilità di partire l&apos;8 Mar (+1 notte)</p>
           </motion.div>
 
           <motion.div
@@ -88,8 +91,9 @@ export default function Info() {
             className="bg-white p-6 md:p-8"
           >
             <span className="text-sand-400 text-sm uppercase tracking-wider">Prezzo</span>
-            <p className="text-xl md:text-2xl font-bold text-sunset-500 mt-2">1.499 €</p>
-            <p className="text-sand-500 text-sm mt-1">a persona</p>
+            <p className="text-xl md:text-2xl font-bold text-sunset-500 mt-2">1.700 €</p>
+            <p className="text-sand-500 text-sm mt-1">+ volo incluso (1.000€)</p>
+            <p className="text-sunset-500 text-xs mt-1 font-medium">2.700€ tutto incluso</p>
           </motion.div>
         </div>
 
@@ -152,13 +156,6 @@ export default function Info() {
                 </motion.li>
               ))}
             </ul>
-
-            {/* Deadline box */}
-            <div className="mt-10 p-6 bg-dark-800 rounded-lg">
-              <p className="text-white/60 text-sm uppercase tracking-wider mb-1">Scadenza Saldo</p>
-              <p className="text-2xl font-bold text-white">12 Gennaio 2026</p>
-              <p className="text-sunset-500 text-sm mt-2 font-medium">Caparra 500€ entro 25 Agosto 2025</p>
-            </div>
           </motion.div>
         </div>
 

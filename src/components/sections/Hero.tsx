@@ -6,7 +6,7 @@ import { Button, Badge } from '@/components/ui'
 
 export default function Hero() {
   const badges = [
-    { icon: <CalendarDaysIcon className="w-4 h-4" />, text: '26 Feb - 7 Mar 2026' },
+    { icon: <CalendarDaysIcon className="w-4 h-4" />, text: '8-19 AGOSTO 2026' },
     { icon: <MapPinIcon className="w-4 h-4" />, text: 'Watamu, Kenya' },
     { icon: <UserGroupIcon className="w-4 h-4" />, text: 'Posti Limitati' },
   ]
@@ -109,7 +109,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg md:text-xl lg:text-2xl text-white/80 max-w-3xl mx-auto mb-10 leading-relaxed"
         >
-          Parti per il Wellness Retreat in Kenya: 8 notti tra allenamenti funzionali, 
+          Parti per il Wellness Retreat in Kenya: 10 notti tra allenamenti funzionali, 
           safari allo Tsavo Est, oceano cristallino e tramonti indimenticabili.
         </motion.p>
 

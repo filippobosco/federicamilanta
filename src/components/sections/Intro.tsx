@@ -34,7 +34,7 @@ export default function Intro() {
               className="absolute -bottom-6 -right-6 lg:right-auto lg:-left-6 bg-dark-800 rounded-xl p-6 shadow-2xl"
             >
               <p className="text-white/60 text-xs uppercase tracking-wider">Date</p>
-              <p className="text-white text-xl font-bold mt-1">26 Feb — 7 Mar</p>
+              <p className="text-white text-xl font-bold mt-1">8-19 AGOSTO</p>
               <p className="text-sunset-500 font-bold">2026</p>
             </motion.div>
           </motion.div>
@@ -71,7 +71,7 @@ export default function Intro() {
               </p>
 
               <p>
-                <strong className="text-dark-800">8 notti e 9 giorni</strong> di 
+                <strong className="text-dark-800">10 notti e 11 giorni</strong> di 
                 Functional Training, safari allo Tsavo Est, snorkeling, escursioni 
                 in dhow e relax in villa privata con piscina.
               </p>

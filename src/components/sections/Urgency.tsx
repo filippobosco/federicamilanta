@@ -2,12 +2,9 @@
 
 import { motion } from 'framer-motion'
 import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
-import { Section, Button, Countdown } from '@/components/ui'
+import { Section, Button } from '@/components/ui'
 
 export default function Urgency() {
-  // Deadline: 12 gennaio 2026
-  const deadline = new Date('2026-01-12T23:59:59')
-
   return (
     <section className="relative py-16 md:py-24 overflow-hidden">
       {/* Background gradient */}
@@ -73,8 +70,6 @@ export default function Urgency() {
           className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto"
         >
           Rimangono solo <strong className="text-yellow-300">5 posti disponibili</strong> su 12.
-          <br />
-          La deadline per il saldo è il <strong className="text-yellow-300">12 gennaio 2026</strong>.
         </motion.p>
 
         {/* Additional text */}
@@ -87,18 +82,6 @@ export default function Urgency() {
         >
           Non perdere l&apos;occasione di vivere un&apos;esperienza che ricorderai per sempre.
         </motion.p>
-
-        {/* Countdown */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
-          className="mb-10"
-        >
-          <p className="text-white/80 mb-4 font-medium">Tempo rimasto per prenotare:</p>
-          <Countdown targetDate={deadline} />
-        </motion.div>
 
         {/* CTA */}
         <motion.div
