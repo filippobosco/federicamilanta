@@ -68,7 +68,15 @@ export default function About() {
               posti nuovi...<br />
               Per questo ho deciso di unire le mie 2 grandi passioni:{' '}
               <strong className="text-sunset-500">SPORT & FITNESS</strong> e{' '}
-              <strong className="text-sunset-500">L&apos;AVVENTURA</strong>.
+              <strong className="text-sunset-500">VIAGGI</strong>.
+            </p>
+
+            <p>
+              Da questo è nato il mio progetto <strong className="text-sunset-500">SPORT IN VIAGGIO</strong> per dare la possibilità a tutte le persone di allenarsi mentre viaggiano e mantenere la forma.
+            </p>
+
+            <p>
+              Vivere il viaggio in modo originale e diverso: scoprire luoghi nuovi, vivere il territorio ed esplorare ogni destinazione in modo attivo, sano, coinvolgente ed autentico.
             </p>
 
             <p>

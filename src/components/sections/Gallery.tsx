@@ -38,9 +38,9 @@ const galleryImages = [
     span: 'col-span-1 row-span-1',
   },
   {
-    src: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=600',
-    alt: 'Kayak lungo la costa',
-    title: 'Avventure Marine',
+    src: '/villa 2.jpeg',
+    alt: 'Vista aerea della villa con piscina e strutture tradizionali',
+    title: 'Villa Privata',
     span: 'col-span-1 row-span-1',
   },
   {
@@ -50,9 +50,9 @@ const galleryImages = [
     span: 'col-span-1 row-span-1',
   },
   {
-    src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=600',
-    alt: 'Cena gourmet con piatti locali',
-    title: 'Cena Gourmet',
+    src: '/pranzo.jpeg',
+    alt: 'Pranzo in spiaggia con vista oceano',
+    title: 'Pranzo in Spiaggia',
     span: 'col-span-1 row-span-1',
   },
 ]

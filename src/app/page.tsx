@@ -27,7 +27,7 @@ export default function Home() {
       {/* Target audience */}
       <Target />
 
-      {/* MICIO'S HOUSE - La villa */}
+      {/* La villa privata */}
       <MiciosHouse />
 
       {/* Features - What's included */}

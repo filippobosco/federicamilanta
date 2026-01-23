@@ -13,7 +13,7 @@ const programDays = [
     highlight: 'Arrivo e welcome drink',
     activities: [
       'Arrivo a Mombasa e trasferimento in van privato',
-      'Arrivo alla villa MICIO\'S HOUSE',
+      'Arrivo alla villa privata',
       'Welcome drink e presentazione del gruppo',
       'Cena di benvenuto in villa preparata dallo Chef',
     ],
@@ -157,7 +157,7 @@ const programDays = [
     highlight: 'Partenza',
     activities: [
       'Colazione finale in villa',
-      'Check-out da MICIO\'S HOUSE',
+      'Check-out dalla villa',
       'Trasferimento all\'aeroporto di Mombasa',
       'Partenza con il cuore pieno di ricordi indimenticabili',
     ],

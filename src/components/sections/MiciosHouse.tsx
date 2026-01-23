@@ -14,7 +14,7 @@ const features = [
     description: 'Ampio giardino con piscina, lettini per il relax, zona living esterna e bar a bordo piscina.',
   },
   {
-    title: '4 Camere Eleganti',
+    title: '12 Posti Letto',
     description: 'Spaziose camere matrimoniali arredate con gusto, ciascuna con il proprio bagno privato.',
   },
   {
@@ -45,7 +45,7 @@ export default function MiciosHouse() {
           Il Tuo Alloggio
         </span>
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-dark-800 mt-3">
-          Villa Privata <span className="text-sunset-500">MICIO&apos;S HOUSE</span>
+          <span className="text-sunset-500">Villa Privata</span>
         </h2>
         <p className="text-sand-500 mt-4 max-w-2xl mx-auto text-lg">
           A Watamu, immersa nel verde delle palme e nella tranquillità, a pochi minuti dal meraviglioso mare.
@@ -62,8 +62,8 @@ export default function MiciosHouse() {
             className="relative aspect-[4/3] rounded-2xl overflow-hidden"
           >
             <Image
-              src="/villa.png"
-              alt="Villa MICIO'S HOUSE - Piscina"
+              src="/Villa privata.jpeg"
+              alt="Villa Privata - Piscina"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -77,8 +77,8 @@ export default function MiciosHouse() {
             transition={{ delay: 0.1 }}
           >
             <p className="text-lg text-dark-800/80 leading-relaxed mb-6">
-              Durante il nostro Wellness Retreat, la nostra &quot;Casa&quot; sarà la bellissima 
-              Villa privata MICIO&apos;S HOUSE.
+              Durante il nostro Wellness Retreat, la nostra &quot;Casa&quot; sarà una bellissima 
+              villa privata.
             </p>
             <p className="text-lg text-dark-800/80 leading-relaxed">
               Una villa arredata con stile, un vero equilibrio di forme, colori ed eleganza africana. 

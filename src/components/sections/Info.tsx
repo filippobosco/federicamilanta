@@ -5,23 +5,23 @@ import { Section, Button } from '@/components/ui'
 
 const included = [
   '10 notti in villa',
-  'Transfer A/R aeroporto',
+  'Transfer A/R aeroporto in minivan privato',
   '2 giorni safari (1 notte) in lodge e tende, camere da 2 o 3 per camera',
   '5 cene in villa preparate dallo Chef',
   'Colazioni preparate dallo Chef',
   '5 allenamenti con VIC e Federica',
   '4 allenamenti con Federica',
   'MARAFA, CHE SHALE, MALINDI',
-  'FULL DAY BOAT in DHOW tipica barca locale, con canoa 1 ora',
+  'FULL DAY BOAT in DHOW tipica barca locale, con kayak nelle mangrovie',
   'ROVINE DI GEDE in tuk tuk',
-  'DOMENICA: MARAFIKI, MESSA GOSPEL, GRIGLIATA + LETTINO',
-  'APERITIVO CRAB SHARK, LITCHOUSE',
-  'COOKING CLASS NEL VILLAGGIO',
+  'DOMENICA: MARAFIKI, MESSA GOSPEL, GRIGLIATA + LETTINO in spiaggia',
+  'APERITIVO AL LITCHOUSE con le amache fronte oceano',
+  'COOKING CLASS NEL VILLAGGIO LOCALE',
   'VICTORIA ACADEMY',
-  'Volo Italia-Kenya A/R incluso',
 ]
 
 const notIncluded = [
+'Volo Italia-Kenya A/R',
   'ETA/Visto Kenya (30€)',
   'Alcuni pranzi',
   'Spese personali',
@@ -92,8 +92,8 @@ export default function Info() {
           >
             <span className="text-sand-400 text-sm uppercase tracking-wider">Prezzo</span>
             <p className="text-xl md:text-2xl font-bold text-sunset-500 mt-2">1.700 €</p>
-            <p className="text-sand-500 text-sm mt-1">+ volo incluso (1.000€)</p>
-            <p className="text-sunset-500 text-xs mt-1 font-medium">2.700€ tutto incluso</p>
+            <p className="text-sand-500 text-sm mt-1">+ prezzo del volo (≃ 1.000€)</p>
+            <p className="text-sunset-500 text-xs mt-1 font-medium">≃ 2.700€ tutto incluso</p>
           </motion.div>
         </div>
 
