@@ -89,9 +89,10 @@ export default function ThankYouPage() {
           >
             <p className="text-white/60 text-sm uppercase tracking-wider mb-2">Il Retreat</p>
             <p className="text-2xl font-bold text-white">
-              26 Febbraio — 7 Marzo <span className="text-sunset-500">2026</span>
+              8-19 AGOSTO <span className="text-sunset-500">2026</span>
             </p>
-            <p className="text-white/60 mt-1">Watamu, Kenya • 8 notti • 1.499€</p>
+            <p className="text-white/60 mt-1">Watamu, Kenya • 10 notti • 1.700€ + volo (≃ 1.000€)</p>
+            <p className="text-sunset-500 text-sm mt-1 font-medium">≃ 2.700€ tutto incluso</p>
           </motion.div>
 
           {/* Contatti diretti */}
